@@ -15,11 +15,15 @@ export default {
     },
     mounted() {
         if(this.score < 250){
-            this.rank = "Ninja Fingers"
-        } else if(this.score < 400) {
-            this.rank = "Rapid Reflexes"
-        } else {
-            this.rank = "Snail pace..."
+            this.rank = "Ninja Fingers 🚀"
+        } else if(this.score < 500) {
+            this.rank = "Rapid Reflexes 🏎️"
+        } else if(this.score < 1000) {
+            this.rank = "You are quite fast! 🏃‍♂️"
+        }else if(this.score < 1500) {
+            this.rank = "Okey, nearly their 🚶‍♂️"
+        }else {
+            this.rank = "🐌 pace..."
         }
     }
 }
